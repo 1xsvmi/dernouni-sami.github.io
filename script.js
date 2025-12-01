@@ -29,7 +29,10 @@ window.addEventListener('scroll', () => {
   const scroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrolled = (scroll / height) * 100;
-  document.querySelector('.scroll-progress::after').style.width = scrolled + '%';
+  const progressBar = document.querySelector('.scroll-progress');
+  if (progressBar) {
+    progressBar.style.setProperty('--scroll-width', scrolled + '%');
+  }
 });
 
 // Smooth Reveal Animation on Scroll
