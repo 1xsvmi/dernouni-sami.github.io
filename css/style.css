@@ -1,0 +1,23 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'JetBrains Mono',monospace; background:#000; color:#e0e0ff; overflow-x:hidden; }
+#particles-js { position:fixed; width:100%; height:100%; top:0; left:0; z-index:-1; }
+.cursor { position:fixed; width:20px; height:20px; background:#a855f7; border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); box-shadow:0 0 30px #a855f7; opacity:0.7; }
+
+.container { max-width:950px; margin:40px auto; background:rgba(10,10,30,0.9); border-radius:20px; overflow:hidden; border:2px solid #4c1d95; box-shadow:0 0 80px rgba(168,85,247,0.5); backdrop-filter:blur(10px); }
+header { background:linear-gradient(135deg,#1a0033,#2e1065); padding:130px 40px; text-align:center; }
+h1 { font-size:4.8rem; background:linear-gradient(90deg,#d0b0ff,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.title { font-size:2rem; color:#c8a2ff; letter-spacing:5px; margin:15px 0; }
+.contact a { color:#c8a2ff; text-decoration:none; padding:15px 35px; border:2px solid #a855f7; border-radius:50px; display:inline-block; margin-top:20px; transition:0.4s; }
+.contact a:hover { background:#a855f7; box-shadow:0 0 40px #a855f7; }
+
+main { padding:80px 60px; }
+h2 { color:#d0b0ff; font-size:2.3rem; margin:50px 0 30px; border-bottom:3px solid #a855f7; padding-bottom:10px; display:inline-block; }
+ul li { padding:20px 0 20px 60px; border-bottom:1px solid #333; position:relative; font-size:1.2rem; transition:0.4s; }
+ul li:hover { color:white; transform:translateX(20px); }
+ul li i { position:absolute; left:0; top:50%; transform:translateY(-50%); font-size:2rem; color:#a855f7; }
+.badge { background:#7c3aed; color:white; padding:6px 16px; border-radius:30px; font-size:0.8rem; margin-left:10px; }
+
+.print-btn { background:transparent; color:#c8a2ff; border:2px solid #a855f7; padding:15px 40px; border-radius:50px; cursor:pointer; float:right; font-weight:bold; transition:0.4s; }
+.print-btn:hover { background:#a855f7; box-shadow:0 0 40px #a855f7; }
+
+@media (max-width:768px) { h1{font-size:3.5rem;} header{padding:100px 20px;} main{padding:50px 30px;} }
