@@ -1,1 +1,0 @@
-# dernouni-sami.github.io
